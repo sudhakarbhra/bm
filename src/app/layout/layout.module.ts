@@ -9,6 +9,7 @@ import {
     MatSidenavModule,
     MatToolbarModule
 } from '@angular/material';
+import { MatTableModule } from '@angular/material/table';
 import { TranslateModule } from '@ngx-translate/core';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
@@ -25,7 +26,7 @@ import { ProfileComponent } from './profile/profile.component';
 @NgModule({
     imports: [
         CommonModule,
-        LayoutRoutingModule,
+        LayoutRoutingModule, 
         MatToolbarModule,
         MatButtonModule,
         MatSidenavModule,
@@ -33,7 +34,8 @@ import { ProfileComponent } from './profile/profile.component';
         MatInputModule,
         MatMenuModule,
         MatListModule,
-        TranslateModule
+        TranslateModule,
+        MatTableModule
     ],
     declarations: [Screen2Component, LayoutComponent, NavComponent, TopnavComponent, SidebarComponent, UsersComponent, ProductsComponent, VendorsComponent, ReportsComponent, ProfileComponent, ]
 

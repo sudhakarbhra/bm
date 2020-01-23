@@ -8,7 +8,7 @@ import {
     MatSidenavModule,
     MatToolbarModule
 } from '@angular/material';
-
+import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input'; 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -44,7 +44,8 @@ export const createTranslateLoader = (http: HttpClient) => {
                 useFactory: createTranslateLoader,
                 deps: [HttpClient]
             }
-        })
+        }),
+        MatTableModule      
     ],
     providers: [],
     bootstrap: [AppComponent]
